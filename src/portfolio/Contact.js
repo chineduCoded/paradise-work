@@ -1,23 +1,64 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
+import { send } from 'emailjs-com';
 
 
 export const Contact = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    from_email: '',
+    message: '',
+  });
+  
+ const onSubmit = (e) => {
+    e.preventDefault();
+
+    send(
+      'service_bokahcn',
+      'template_9dipdzl',
+      toSend,
+      'user_DNnx1oC0XBr6dU6FB3IIY'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+
+ }
+  
+ const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
     return (
        <Container id="contact">
            <Wrapper>
                 <Title>Contact Me</Title>
                 <Sub>I'd love to hear from you</Sub>
-	       <Form>
-	         <Input type="text" placeholder="Name" required value={name} onChange={(e) => {
-			setName(e.target.value)
-		 }} />
-	         <Input type="email" placeholder="Email"value={email} onChange={(e) => {setEmail(e.target.value)}} />
-	       <Textarea placeholder="Message" value={message} onChange={(e) => {setMessage(e.target.value)}}  />
-	         <Btn>Contact Me</Btn>
+	       <Form  onSubmit={onSubmit}>
+	         <Input 
+		type='text'
+   		 name='from_name'
+   		 placeholder='Your name'
+   		 value={toSend.from_name}
+   		 onChange={handleChange}
+	         />
+	         <Input 
+	    	type='text'
+    		name='from_email'
+    		placeholder='Your email'
+   		 value={toSend.from_email}
+    		onChange={handleChange}
+	   	 />
+	       <Textarea
+	       type='text'
+   		 name='message'
+    		placeholder='Your message'
+    		value={toSend.message}
+   		 onChange={handleChange}
+	  	  />
+	         <Btn type="submit">Contact Me</Btn>
 	       </Form>
            </Wrapper>
        </Container>
