@@ -1,38 +1,19 @@
 [
-    {
-      "id": "1",
-      "title": "Community Cleaning",
-      "desc": "The most complete freelancer marketplace theme in the world. Build your freelancer website with the best template. Finest written code and awesome customer support!",
-      "img": "assets/clean1.png"
+    {      "id": "1",
+      "title": "Eko Digital Initiative Lagos",
+      "desc": "Eko Digital is a program facilitated by Lagos State Government through the office of the Special Adviser on Education - in collaboration with Advent Management Solution and LoftyInc Allied Partners Limited...",
+      "img": "assets/pro_eko.jpg"
     },
     {
       "id": "2",
-      "title": "Ikeja Community Cleaning",
-      "desc": "The most complete freelancer marketplace theme in the world. Build your freelancer website with the best template. Finest written code and awesome customer support!",
-      "img": "assets/clean2.jpg"
+      "title": "MSME Capacity Building",
+      "desc": "Its a project sponsored by the Federal ministry of Trade and Investment to enlighten the medium scale micro entrepreneur on financial literacy, book keeping and business formation and how to get access to the Bank of Industry Loan",
+      "img": "assets/pro_loan.jpg"
     },
     {
       "id": "3",
-      "title": "Ogba Community Cleaning",
-      "desc": "The most complete freelancer marketplace theme in the world. Build your freelancer website with the best template. Finest written code and awesome customer support!",
-      "img": "assets/clean3.jpg"
-    },
-    {
-      "id": "4",
-      "title": "Community Cleaning",
-      "desc": "The most complete freelancer marketplace theme in the world. Build your freelancer website with the best template. Finest written code and awesome customer support!",
-      "img": "assets/clean1.png"
-    },
-    {
-      "id": "5",
-      "title": "Ikeja Community Cleaning",
-      "desc": "The most complete freelancer marketplace theme in the world. Build your freelancer website with the best template. Finest written code and awesome customer support!",
-      "img": "assets/clean2.jpg"
-    },
-    {
-      "id": "6",
-      "title": "Ogba Community Cleaning",
-      "desc": "The most complete freelancer marketplace theme in the world. Build your freelancer website with the best template. Finest written code and awesome customer support!",
-      "img": "assets/clean3.jpg"
+      "title": "Opportunities for Africans",
+      "desc": "It is the LSETF/UDADF Employability Programme for Lagos resident between the age of 18yrs - 35yrs.",
+      "img": "assets/pro_emp.jpg"
     }
   ]

@@ -105,14 +105,14 @@ padding: 10px;
 
 const Image = styled.img`
 width: 100%;
-height: 55%;
+height: 50%;
 object-fit: cover;
 border-radius: 5px 5px 0 0;
 `;
 
 const Card = styled.div`
-width: 300px;
-height: 500px;
+width: 330px;
+height: 550px;
 margin: 15x 5px;
 border-radius: 6px;
 background: #f5f5f5;
