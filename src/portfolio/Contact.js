@@ -10,22 +10,28 @@ export const Contact = () => {
     message: '',
   });
   
+  
  const onSubmit = (e) => {
     e.preventDefault();
 
     send(
       'service_bokahcn',
-      'template_9dipdzl',
+      'template_ct0s8ke',
       toSend,
       'user_DNnx1oC0XBr6dU6FB3IIY'
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+	
       })
       .catch((err) => {
         console.log('FAILED...', err);
       });
-
+	 setToSend({
+		from_name: '',                                    from_email: '',
+    		message: '',
+	 })
+	
  }
   
  const handleChange = (e) => {
@@ -142,6 +148,11 @@ justify-content: center;
 flex-direction: column;
 padding: 20px 0;
 background-color: #fff;
+
+div {
+color: green;
+text-align: center;
+}
 `;
 
 const Container = styled.div`

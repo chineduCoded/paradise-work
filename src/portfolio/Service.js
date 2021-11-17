@@ -47,6 +47,7 @@ export const Service = () => {
     return (
         <Container id="service">
             <Wrapper>
+	       <Header>Services</Header>
                 <Slide {...settings}>
                     {data.map((props) => (
                     <Card>
@@ -135,6 +136,12 @@ min-height: 80vh;
 color: #fff;
 background: #DCDCDC;
 font-family: 'Poppins', sans-serif;
+`;
+const Header = styled.h1`
+text-align: center;
+color: #011834;
+font-size: 40px;
+margin-bottom: 20px;
 `;
 
 const Wrapper = styled.div`
